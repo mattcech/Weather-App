@@ -1,6 +1,6 @@
 'use strict'
 
-const getCurrentWeather = require('./lib/getCurrentWeather')
+const getCurrentWeather = require('lib/getCurrentWeather')
 
 const firstOfEntityRole = function(message, entity, role) {
   role = role || 'generic';
@@ -22,7 +22,7 @@ exports.handle = function handle(client) {
     prompt() {
       client.addTextResponse('Hello world!')
       client.addTextResponse('I don\'t know much yet, but if you need some pointers on where to get started you should check out the docs – http://docs.init.ai/?key=c0fb-addc-119f')
-      client.addTextResponse('Otherwise, head over to Teach (up at the top) and start teaching me!')
+      client.addTextResponse('Otherwise, head over to Teach (up at the top) and start teaching me! Please')
       client.updateConversationState({
         helloSent: true
       })
