@@ -5,7 +5,7 @@ const request = require('request')
 module.exports = function getCurrentWeather(locationName, next) {
   const appId = '41056fae6241e00d628481479253d37a'
 
-  const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=${appId}&q=${locationName}'
+  const requestUrl = `http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=${appId}&q=${locationName}`
 
   console.log('Making HTTP GET request to:', requestUrl)
 
