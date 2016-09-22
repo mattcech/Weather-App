@@ -42,7 +42,6 @@ exports.handle = function handle(client) {
   })
 
   // ...
-
   const collectCity = client.createStep({
     satisfied() {
       return Boolean(client.getConversationState().weatherCity)
@@ -99,7 +98,6 @@ exports.handle = function handle(client) {
       })
     }
   })
-
 // ...
 
   client.runFlow({
